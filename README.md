@@ -3,12 +3,8 @@
 ## Installation
 
 ```console
-$ git clone https://github.com/aminnairi/wordpress-docker.git ~/code/my-wordpress-app
-$ cd ~/code/my-wordpress-app
+$ git clone https://github.com/dez02/storycat_theme.git
 ```
-
-Where `~/code/my-wordpress-app` is the path to where you want to have your Wordpress website.
-
 ## Start
 
 ```console
