@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  database:
+    build: docker/database
+    restart: always
+    volumes:
+      - ./database:/var/lib/mysql
+
+  server:
+    build: docker/server
+    restart: always
+    links:
+      - database:db
+    depends_on:
+      - database
+    ports:
+      - 8080:80
+    volumes:
+      - ./server:/var/www/html
+
+  database-client:
+    restart: always
+    depends_on:
+      - database
+    links:
+      - database:db
+    build: docker/database-client
+    restart: always
+    ports:
+      - 8081:80
