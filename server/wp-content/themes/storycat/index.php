@@ -8,12 +8,30 @@
 	<?php wp_head();?>
 </head>
 <body>
-	<h1>Welcome on my Website!</h1>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-		Tempore temporibus, suscipit quis rerum similique aliquid adipisci itaque,
-		iusto aspernatur explicabo, provident nam.
-		Provident minus autem ad nostrum perferendis magni eum!</p>
-		<button class='btn btn-success'>click</button>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>For Cat's Lovers!</h1>
+		</div>
+	</div>
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<img src="<?php echo get_template_directory_uri();?>/assets/images/cat2.jpg" alt="" class="img-thumbnail img-responsive">
+				</div>
+				<div class="col-xs-10">
+					<h1>First title</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Tempore temporibus, suscipit quis rerum similique aliquid adipisci itaque,
+						iusto aspernatur explicabo, provident nam.
+						Provident minus autem ad nostrum perferendis magni eum!
+					</p>
+					<button class='btn btn-success'>click</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
 		<?php wp_footer();?>
 </body>
 </html>
